@@ -1,0 +1,17 @@
+Instructions To Execute:
+===========================
+ 1. ExcecuteSystem.java is the main starting point.
+ 	a. ) create a run/debug configuration through eclipse. 
+ 	
+Input File Locations: 
+=======================
+ 1. System Properties  =  /CustomerPortfolio/src/com/fidelity/configuration/SystemConfig.properties
+ 2. XML Configs = /CustomerPortfolio/src/com/fidelity/configuration/SystemConfig.properties
+ 3. Input Files = /CustomerPortfolio/src/com/fidelity/input
+ 4. Log4j config = /CustomerPortfolio/src/log4j.properties
+ 5 	log file  = /CustomerPortfolio/logs/applicationLog.log
+ 6. Java Docs = /CustomerPortfolio/doc
+ 
+ Libraries Used : 
+ ===================
+ Log4j-1.2.17.jar
