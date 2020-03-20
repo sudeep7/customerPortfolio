@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fundConfig>
+	<attribute name="fundName" startPosition="1" endPosition="20" />
+	<attribute name="fundNumber" startPosition="20" endPosition="25" />
+	<attribute name="fundType" startPosition="25" endPosition="26" />
+	<attribute name="fundPrice" startPosition="26" endPosition="30" />
+	
+</fundConfig>

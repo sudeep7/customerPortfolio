@@ -1,0 +1,53 @@
+## Requirements
+The purpose of the program is to build a fund portfolio for each customer based on their age and assets available for investments. 
+
+The portfolios are created using a set of age based models. 
+
+Each age based model will specify 1 fund from each of the 3 categories (Equity, Bond, Cash) for a total of 3 funds and 
+will dictate the percentage of the customer portfolio that should be allocated (e.g. 80% Equity, 10% Cash, 10% Bond). 
+
+The inputs to the program will be a list of funds with prices and a list of customers with their assets and date of birth. 
+The program will need to read in each customer record, choose the correct portfolio model based on the age of the customer 
+and create an allocation of funds using the fund list.  The output of the program will be a portfolio file with a record 
+for each customer with the share amounts of each fund selected.  
+
+### Portfolio Models
+|Model Name			|% in Equity Funds 	|% in Bond funds    |% in Cash funds    |Investor Age Range	|
+|-------------------|-------------------|-------------------|-------------------|---------------|
+|Aggressive Growth		|80%			|10%		    |10%		|0-40 Years		|
+|Growth				|70%			|20%		    |10%		|41-55 Years		|
+|Income				|50%			|30%		    |20%		|56-65 Years		|
+|Retirement			|20%			|30%		    |50%		|65 and older		|
+
+### Business Rules
+* All number values should be rounded down to meet precision for output (not truncated)
+* Each customer portfolio will have three funds (Equity, Bond and Cash)
+* The funds in each customer portfolio will be allocated based on the appropriate age based model
+* When there are multiple funds in each category to choose from rotate equally through them when assigning to a customer portfolio
+* When there is an error processing a customer record report the error skip the record and continue processing the rest
+
+### File Specifications
+The specifications for the input and output files and the information on the portfolio models will be provided. 
+
+Fund Input File:
+* Fund Name 1-20 (alphanumeric right padded with spaces)
+* Fund Number 21-25 (numeric integer left padded with zeros)
+* Fund Type 26 (numeric integer 1-Equity,2-Bond,3-Cash)
+* Fund Price 27-32 (numeric decimal left zero padded, precision 2, explicit decimal point)
+
+Customer Input File:
+* First Name 1-10  (alphanumeric right padded with spaces)
+* Last Name 11-20 (alphanumeric right padded with spaces)
+* Date of Birth 21-28 (numeric mmddyyyy)
+* Assets 29-40 (numeric decimal left zero padded, precision 2, explicit decimal point)
+
+Portfolio Output File:
+* Last Name 1-10 (alphanumeric right padded with spaces)
+* First Name 11-20  (alphanumeric right padded with spaces)
+* Portfolio Name 21-40   (alphanumeric right padded with spaces)
+* Equity Fund Name 41-60 (alphanumeric right padded with spaces)
+* Equity Fund Shares 61-71 (numeric decimal left zero padded, precision 3, explicit decimal point)
+* Bond Fund Name 72-91 (alphanumeric right padded with spaces)
+* Bond Fund Shares 92-102 (numeric decimal left zero padded, precision 3, explicit decimal point)
+* Cash Fund Name 103-123(alphanumeric right padded with spaces)
+* Cash Fund Shares 124-134 (numeric decimal left zero padded, precision 3, explicit decimal point)

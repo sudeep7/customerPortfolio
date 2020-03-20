@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customerConfig>
+	<attribute name="firstName" startPosition="1" endPosition="10" />
+	<attribute name="lastName" startPosition="10" endPosition="20" />
+	<attribute name="dateOfBirth" startPosition="20" endPosition="28"/>
+	<attribute name="assets" startPosition="28" endPosition="40" />
+	
+</customerConfig>

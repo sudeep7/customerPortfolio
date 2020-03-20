@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolioModelConfig>
+		
+<ageRange min="0" max="40" model="Agressive Growth">		
+		<fundType type="equity" percentage="80"/>
+		<fundType type="bond" percentage="10"/>
+		<fundType type="cash" percentage="10"/>			
+</ageRange>	
+	
+<ageRange min="41" max="55" model="Growth">		
+		<fundType type="equity" percentage="70"/>
+		<fundType type="bond" percentage="20"/>
+		<fundType type="cash" percentage="10"/>		
+</ageRange>		
+
+<ageRange min="56" max="65" model="Income">		
+		<fundType type="equity" percentage="50"/>
+		<fundType type="bond" percentage="30"/>
+		<fundType type="cash" percentage="20"/>	
+</ageRange>
+
+<ageRange min="66" max="120" model="Retirement">	
+		<fundType type="equity" percentage="20"/>
+		<fundType type="bond" percentage="30"/>
+		<fundType type="cash" percentage="50"/>		
+</ageRange>
+
+	
+</portfolioModelConfig>

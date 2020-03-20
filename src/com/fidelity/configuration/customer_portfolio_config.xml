@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customerPortfolioConfig>
+	<attribute name="lastName" startPosition="1" endPosition="10"/>
+	<attribute name="firstName" startPosition="11" endPosition="20"/>
+	<attribute name="portfolioName" startPosition="21" endPosition="40"/>
+	<attribute name="equityFundName" startPosition="41" endPosition="60"/>
+	<attribute name="equityFundShares" startPosition="61" endPosition="71"/>
+	<attribute name="bondFundName" startPosition="72" endPosition="91"/>
+	<attribute name="bondFundShares" startPosition="92" endPosition="102"/>
+	<attribute name="cashFundName" startPosition="102" endPosition="123"/>
+	<attribute name="cashFundShares" startPosition="124" endPosition="134"/>	
+</customerPortfolioConfig>
